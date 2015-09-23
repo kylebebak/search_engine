@@ -19,7 +19,7 @@ id (PK), path (unique, NK), content, size, and date_added
 
 Mixin with static constants, inherited by both index class and query class, like TOKEN_NAMESPACE.
 
-When a query is executed, the index for each token in the query can be read into python memory from Redis. This means that Redis can store a JSON blob for each token, which should occupy much less space than storing the whole inverted index in PYTHON, and which makes it easy to persist and update the full index using RDB.
+When a query is executed, the index for each token in the query can be read into python memory from Redis. This means that Redis can store a JSON blob for each token, which should occupy much less space than storing the whole inverted index in Python, which makes it easy to persist and update the full index using RDB.
 
 import os
 import psutil
