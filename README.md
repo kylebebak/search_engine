@@ -14,4 +14,7 @@ To build a real search engine using this scheme, you would need to partition the
 
 It's clear that if there are enough documents, the document/position JSON for even one token would not fit in the memory of a single machine. Therefore, independent indices would have to be constructed for chunks of documents in the corpus, and the tokens in the query would be sent to each of these indices. The index for a chunk of documents could then be further partitioned by token if necessary. This would result in clusters of servers such that:
 - each cluster is responsible for serving the index for a chunk of documents
-- each server in the cluster is reponsible for a subset of tokens in that chunk of documents
+- each server in the cluster is responsible for a subset of tokens in that chunk of documents
+
+### LICENSE
+This code is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
